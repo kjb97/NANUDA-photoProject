@@ -1,0 +1,47 @@
+body {
+  --primaryColor: #FFF1DE;
+  --secondaryColor: #ECE2CE;
+  --pointColor: #D4775A;
+  --borderColor: #CABEAC;
+  --txtBtnColor: #2D2D2D;
+  
+  margin: 0;
+  padding: 0;
+  background-color: var(--primaryColor);
+}
+
+.left-box, .menu-icon {
+  list-style-type: none;
+}
+
+.left-container {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background-color: var(--secondaryColor);
+  border-right: 1px solid var(--borderColor);
+}
+
+.top-container {
+  height: 40px;
+  position: relative;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.icon-box{
+  width: 40px;
+  height: 40px;
+  display: table;
+  text-align: center;
+}
+
+.icon-box {
+  margin-bottom: 10px;
+}
+
+.icon-link{
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--txtBtnColor);
+}
