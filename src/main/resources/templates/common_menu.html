@@ -12,7 +12,7 @@
   <header id="h_container">
     <div class="top_menu">
       <div class="top_box">
-        <div class="logo_box">
+        <div class="logo_box clickdBtn">
           <a href="#">
             <img src="../static/common-menu/logo.png" alt="로고">
           </a>
@@ -25,20 +25,29 @@
       </div>
     </div>
     <div class="left_menu">
-      <div class="menu_btn_box">
-        <button class="menu_btn" aria-label="메뉴"></button>
+      <div class="m_box m_container">
+        <button class="menu_btn_box menu_btn" aria-label="메뉴">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="menu_name"></div>
       </div>
       <nav class="m_container">
         <a href="#" class="m_box">
-          <i class="fa-solid fa-photo-film"></i>
+          <div class="menu_btn_box MenuBackG">
+            <i class="fa-solid fa-photo-film fa-lg"></i>
+          </div>
           <div class="menu_name">My Album</div>
         </a>
         <a href="#" class="m_box">
-          <i class="fa-solid fa-square-share-nodes"></i>
+          <div class="menu_btn_box">
+            <i class="fa-solid fa-square-share-nodes fa-lg"></i>
+          </div>
           <div class="menu_name">Show Feed</div>
         </a>
         <a href="#" class="m_box">
-          <i class="fa-solid fa-map-location-dot"></i>
+          <div class="menu_btn_box">
+            <i class="fa-solid fa-map-location-dot fa-lg"></i>
+          </div>
           <div class="menu_name">Show Maps</div>
         </a>
       </nav>
