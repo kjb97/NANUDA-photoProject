@@ -1,0 +1,117 @@
+* {
+  --primaryColor: #FFF1DE;
+  --secondaryColor: #ECE2CE;
+  --pointColor: #D4775A;
+  --borderColor: #CABEAC;
+  --txtBtnColor: #2D2D2D;
+
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+
+  background-color: var(--primaryColor);
+}
+
+#h_container {
+  display: flex;
+  color: var(--txtBtnColor)
+}
+
+.top_menu {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-flow: column;
+  border-bottom: 1px solid var(--borderColor);
+  box-shadow: 0px 5px 12px -6px rgba(97,97,97,0.74)
+}
+
+.top_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0 24px 0 84px;
+}
+
+.logo_box {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.h_top_right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.h_top_login {
+  padding: 4px 12px;
+  background-color: var(--pointColor);
+  border: 1px solid var(--pointColor);
+  border-radius: 15px;
+}
+
+.h_top_login > a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.left_menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: var( --secondaryColor);
+  border-right: 1px solid var(--borderColor);
+  z-index: 1;
+}
+
+.menu_btn {
+  height: inherit;
+  border: none;
+  background-color: var(--secondaryColor);
+  cursor: pointer;
+}
+
+.m_box {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-width: 15px;
+}
+
+.menu_btn_box {
+  width: 60px;
+  text-align: center;
+  color: var(--txtBtnColor);
+  position: relative;
+}
+
+.menu_btn_box:after {
+  content: '';
+  position: absolute;
+}
+
+/* 메뉴 클릭 했을때 */
+.clickdBtn {
+  margin-left: 130px;
+}
+
+.menu_name {
+  width: 100px;
+  font-size: 12px;
+  color: var(--txtBtnColor);
+  padding-left: 20px;
+}
